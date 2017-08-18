@@ -1,23 +1,30 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
 
-<div class="home">
+  <title>MFI Initiative</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
 
-  <h1 class="page-heading">Posts</h1>
+<body>
+  <div class="container">
+    <div class="nav">
+      <h2>MFI</h2>
+      <ul>
+        <li>Home</li>
+        <li>HomeAway</li>
+        <li>The Farm</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <div class="main">
+      <h1>MFI Initiative</h1>
+      <h3>Serving the antique and specialty furniture needs of the greater Hampton Roads region</h3>
+    </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</body>
+</html>
